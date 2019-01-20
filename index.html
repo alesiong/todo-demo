@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <script src="out/index.js"></script>
+</head>
+
+<body>
+    <div>
+        <label for="new_name">Name:</label><input id="new_name" required type="text">
+        <label for="new_desc">Description:</label><input id="new_desc" type="text">
+        <label for="new_due">Due Date:</label><input id="new_due" required type="date">
+        <button id="add">Add</button>
+    </div>
+
+    <table id="todo_table">
+        <tr id="todo_header">
+            <th>Name</th>
+            <th>Desc</th>
+            <th>Due Date</th>
+            <th>Action</th>
+        </tr>
+        <tr id="todo_temp" style="display: none;">
+            <td class="name"></td>
+            <td class="desc"></td>
+            <td class="due"></td>
+            <td class="finish"><button>Finish</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
